@@ -1,0 +1,646 @@
+
+/* =====================================
+   CORES DO SITE
+===================================== */
+
+:root {
+    --fundo: #050d1b;
+    --cartao: #0e213d;
+    --azul: #00b7ff;
+    --texto: #ffffff;
+    --texto-suave: #b8c8dd;
+    --borda: #1c3c63;
+}
+
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h1,
+.logo,
+.titulo-secao,
+.membro-info h3 {
+    font-family: "Orbitron", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =====================================
+   CABEÇALHO E MENU
+===================================== */
+
+header {
+    background: #09182e;
+    border-bottom: 1px solid var(--borda);
+}
+
+.menu {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--azul);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: var(--azul);
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--borda);
+    color: white;
+    font-size: 25px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+/* =====================================
+   INÍCIO
+===================================== */
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-texto h1 {
+    font-size: 42px;
+    line-height: 1.3;
+}
+
+.hero-texto h1 span {
+    color: var(--azul);
+}
+
+.hero-texto h2 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.hero-texto p {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #007bce;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.botao:hover {
+    background: #009df0;
+}
+
+/* =====================================
+   FOTO DO CARRINHO
+===================================== */
+
+.hero-visual {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-carrinho {
+    position: static;
+    display: block;
+    width: 85%;
+    height: 280px;
+    max-width: 420px;
+    object-fit: contain;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* =====================================
+   CONFIGURAÇÕES DAS SEÇÕES
+===================================== */
+
+.secao {
+    padding: 75px 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.titulo-secao span {
+    color: var(--azul);
+}
+
+.descricao-secao {
+    color: var(--texto-suave);
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 auto 40px;
+    max-width: 650px;
+}
+
+/* =====================================
+   COMPONENTES
+===================================== */
+
+.componentes {
+    background: #09172b;
+}
+
+.componentes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.componente-card {
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.componente-imagem {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: #102844;
+}
+
+.componente-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.componente-info {
+    padding: 20px;
+}
+
+.componente-info h3 {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.componente-info p {
+    color: var(--texto-suave);
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =====================================
+   PROJETO FINAL
+===================================== */
+
+.projeto-final {
+    background: #050d1b;
+}
+
+.galeria-projeto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.galeria-item {
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e213d;
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.texto-projeto {
+    color: var(--texto-suave);
+    text-align: center;
+    max-width: 800px;
+    margin: 35px auto 0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* =====================================
+   EQUIPE
+===================================== */
+
+.equipe {
+    background: #050d1b;
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* =====================================
+   CARTÕES DAS INTEGRANTES
+===================================== */
+
+.membro-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 22px;
+    border: 1px solid var(--borda);
+    background: linear-gradient(
+        145deg,
+        #112542,
+        #09182e
+    );
+    text-align: center;
+    transition: 0.3s;
+}
+
+.membro-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--azul);
+}
+
+/* =====================================
+   ÁREA DAS FOTOS
+===================================== */
+
+.membro-foto {
+    width: 100%;
+    height: 320px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #0b1d36;
+}
+
+.membro-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 270px;
+    max-height: 270px;
+    object-fit: contain;
+    object-position: center;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+/* =====================================
+   AJUSTE INDIVIDUAL DAS FOTOS
+===================================== */
+
+/* GABRIELLY - MENOR PARA NÃO CORTAR */
+
+.membro-card:nth-child(1) .membro-foto img {
+    width: 90%;
+    height: 90%;
+    max-width: 230px;
+    max-height: 230px;
+    object-fit: contain;
+    object-position: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* PATRICIA - UM POUCO MAIOR */
+
+.membro-card:nth-child(2) .membro-foto img {
+    width: 92%;
+    height: 92%;
+    max-width: 270px;
+    max-height: 270px;
+    object-fit: contain;
+    object-position: center;
+    border: none;
+    box-shadow: none;
+}
+
+/* TABATA - TAMANHO INTERMEDIÁRIO */
+
+.membro-card:nth-child(3) .membro-foto img {
+    width: 92%;
+    height: 92%;
+    max-width: 255px;
+    max-height: 255px;
+    object-fit: contain;
+    object-position: center;
+    border: none;
+    box-shadow: none;
+}
+
+/* =====================================
+   EFEITO AO PASSAR O MOUSE
+===================================== */
+
+.membro-card:hover .membro-foto img {
+    transform: scale(1.03);
+}
+
+/* =====================================
+   NOMES DAS INTEGRANTES
+===================================== */
+
+.membro-info {
+    flex: 1;
+    min-height: 130px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.membro-info h3 {
+    color: white;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+.membro-info p {
+    color: var(--azul);
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* =====================================
+   INFORMAÇÕES DA ESCOLA
+===================================== */
+
+.equipe-escola {
+    text-align: center;
+    margin-top: 60px;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid var(--borda);
+    background: var(--cartao);
+}
+
+.equipe-escola span {
+    color: var(--azul);
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.equipe-escola h3 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.equipe-escola p {
+    color: var(--texto-suave);
+}
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+.rodape {
+    background: #09182e;
+    border-top: 1px solid var(--borda);
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.rodape p {
+    color: var(--texto-suave);
+    font-size: 13px;
+    margin: 0;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-texto {
+        text-align: center;
+    }
+
+    .hero-visual {
+        height: 260px;
+        max-width: 550px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .foto-carrinho {
+        width: 85%;
+        height: 240px;
+    }
+
+    .componentes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equipe-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+    /* MENU */
+
+    .menu {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links.ativo {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    /* INÍCIO */
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero-texto h1 {
+        font-size: 29px;
+    }
+
+    .hero-texto h2 {
+        font-size: 18px;
+    }
+
+    .hero-visual {
+        height: 260px;
+    }
+
+    .foto-carrinho {
+        width: 85%;
+        height: 240px;
+    }
+
+    /* SEÇÕES */
+
+    .secao {
+        padding: 55px 0;
+    }
+
+    .titulo-secao {
+        font-size: 24px;
+    }
+
+    /* COMPONENTES */
+
+    .componentes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .componente-imagem {
+        height: 220px;
+    }
+
+    /* PROJETO FINAL */
+
+    .galeria-projeto {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-item {
+        height: 300px;
+    }
+
+    /* EQUIPE */
+
+    .equipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .membro-foto {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .membro-info {
+        min-height: 120px;
+    }
+
+    /* ESCOLA */
+
+    .equipe-escola {
+        padding: 25px 15px;
+    }
+}

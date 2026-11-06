@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E.P.A Carrinho Inteligente - E.P.A - Etec Sales Gomes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header id="inicio">
+        <nav class="container menu">
+
+            <a href="#inicio" class="logo">
+                ⚡ CARRINHO <span>INTELIGENTE</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menuNavegacao">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="menuNavegacao">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#componentes">Componentes</a></li>
+                <li><a href="#projeto-final">Projeto</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section class="hero">
+            <div class="container hero-container">
+
+                <div class="hero-texto">
+                    <h1>CARRINHO <span>INTELIGENTE</span></h1>
+
+                    <h2>Projeto com Arduino</h2>
+
+                    <p>
+                        Nosso Carrinho Inteligente utiliza um sensor
+                        ultrassônico para identificar obstáculos e
+                        um Arduino para controlar os alertas
+                        luminosos e sonoros.
+                    </p>
+
+                    <p>
+                        Projeto desenvolvido por estudantes da
+                        Etec Sales Gomes, em Tatuí - SP.
+                    </p>
+
+                    <a href="#componentes" class="botao">
+                        Conhecer os componentes
+                    </a>
+                </div>
+
+                <!-- FOTOS DO CARRINHO -->
+                <div class="hero-visual">
+
+                    <img
+                        src="imagens/file_000000004bfc820ea94415744f102479.png"
+                        alt="Outra foto do carrinho"
+                        class="foto-carrinho foto-esquerda"
+                    >
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- COMPONENTES -->
+        <section class="secao componentes" id="componentes">
+            <div class="container">
+
+                <h2 class="titulo-secao">
+                    Componentes <span>Utilizados</span>
+                </h2>
+
+                <p class="descricao-secao">
+                    Conheça os principais componentes utilizados
+                    na montagem do nosso projeto.
+                </p>
+
+                <div class="componentes-grid">
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Placa Arduino UNO Isolada em Azul.png"
+                                 alt="Arduino Uno">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Arduino Uno</h3>
+                            <p>
+                                É responsável por receber os dados
+                                do sensor e controlar os alertas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Sensor Ultrassônico HC-SR04 em Azul.png"
+                                 alt="Sensor HC-SR04">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Sensor HC-SR04</h3>
+                            <p>
+                                Mede a distância dos obstáculos
+                                utilizando ondas ultrassônicas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Módulo Relé Azul SRD-05VDC-SL-C.png"
+                                 alt="Módulo relé">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Módulo Relé 5V</h3>
+                            <p>
+                                Funciona como um interruptor
+                                controlado pelo Arduino.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Buzzer Piezoelétrico Preto Isolado.png"
+                                 alt="Buzzer">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Buzzer</h3>
+                            <p>
+                                Emite sinais sonoros para
+                                avisar sobre obstáculos próximos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Rolo de fita LED RGB multicolorida (1).png"
+                                 alt="Fita LED">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Fita LED</h3>
+                            <p>
+                                Realiza a sinalização luminosa
+                                do carrinho.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Protoboard Branco em Perspectiva.png"
+                                 alt="Protoboard">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Protoboard</h3>
+                            <p>
+                                Permite montar e testar
+                                as conexões sem solda.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Adaptador de energia preto com cabo e plugue europeu.png"
+                                 alt="Fonte de alimentação">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Fonte de Alimentação</h3>
+                            <p>
+                                Fornece energia elétrica
+                                para os componentes do projeto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="componente-card">
+                        <div class="componente-imagem">
+                            <img src="imagens/Fios Jumper Coloridos em Curva S.png"
+                                 alt="Fios jumper">
+                        </div>
+                        <div class="componente-info">
+                            <h3>Fios Jumper</h3>
+                            <p>
+                                Fazem as conexões entre o Arduino,
+                                o sensor e os demais componentes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJETO FINAL -->
+        <section class="secao projeto-final" id="projeto-final">
+            <div class="container">
+
+                <h2 class="titulo-secao">
+                    Projeto <span> Elaborado</span>
+                </h2>
+
+                <p class="descricao-secao">
+                    Confira o resultado da montagem
+                    do nosso Carrinho Inteligente.
+                </p>
+
+                <div class="galeria-projeto">
+
+                    <div class="galeria-item">
+                        <img src="imagens/file_000000004bfc820ea94415744f102479.png"
+                             alt="Carrinho inteligente finalizado">
+                    </div>
+
+                    <div class="galeria-item">
+                        <img src="imagens/file_0000000016a8820eaad30cf756d026e2.png"
+                             alt="Detalhes do carrinho">
+                    </div>
+
+                </div>
+
+                <p class="texto-projeto">
+                    O projeto reúne programação e eletrônica
+                    para detectar obstáculos e emitir alertas.
+                    Durante a montagem, utilizamos componentes
+                    eletrônicos e realizamos testes para
+                    verificar o funcionamento do sistema.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- EQUIPE -->
+        <section class="secao equipe" id="equipe">
+            <div class="container">
+
+                <h2 class="titulo-secao">
+                    Nossa <span>Equipe</span>
+                </h2>
+
+                <p class="descricao-secao">
+                    Conheça as integrantes do projeto.
+                </p>
+
+                <div class="equipe-grid">
+
+                    <!-- GABRIELLY -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="imagens/file_0000000080d4820e989e1f10a17bb1ae.png"
+                                 alt="Gabrielly">
+                        </div>
+
+                        <div class="membro-info">
+                            <h3>
+                                Gabrielly Victoria Rodrigues Antunes
+                            </h3>
+                            <p>Integrante da equipe</p>
+                        </div>
+                    </div>
+
+                    <!-- PATRICIA -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="imagens/file_00000000da5c820e8be24a6c716ad0f3.png"
+                                 alt="Patricia">
+                        </div>
+
+                        <div class="membro-info">
+                            <h3>Patricia Pacheco de Moura</h3>
+                            <p>Integrante da equipe</p>
+                        </div>
+                    </div>
+
+                    <!-- TABATA -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="imagens/file_00000000f1f4820e8ef02b6fa28cce5f.png"
+                                 alt="Tabata">
+                        </div>
+
+                        <div class="membro-info">
+                            <h3>Tabata Mayara da Silva Lopes</h3>
+                            <p>Integrante da equipe</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="equipe-escola">
+                    <span>E.P.A - PROJETO ESCOLAR</span>
+                    <h3>Etec Sales Gomes</h3>
+                    <p>Tatuí - São Paulo</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>
+            © 2026 Carrinho Inteligente |
+            Etec Sales Gomes - Tatuí/SP
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
