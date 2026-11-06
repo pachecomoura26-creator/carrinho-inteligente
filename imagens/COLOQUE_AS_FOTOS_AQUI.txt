@@ -1,0 +1,15 @@
+Coloque nesta pasta as imagens com exatamente estes nomes:
+
+file_000000004bfc820ea94415744f102479.png
+Placa Arduino UNO Isolada em Azul.png
+Sensor Ultrassônico HC-SR04 em Azul.png
+Módulo Relé Azul SRD-05VDC-SL-C.png
+Buzzer Piezoelétrico Preto Isolado.png
+Rolo de fita LED RGB multicolorida (1).png
+Protoboard Branco em Perspectiva.png
+Adaptador de energia preto com cabo e plugue europeu.png
+Fios Jumper Coloridos em Curva S.png
+file_0000000016a8820eaad30cf756d026e2.png
+file_0000000080d4820e989e1f10a17bb1ae.png
+file_00000000da5c820e8be24a6c716ad0f3.png
+file_00000000f1f4820e8ef02b6fa28cce5f.png
